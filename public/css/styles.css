@@ -1,0 +1,375 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+:root {
+--color: #EAC926;
+--color: #03264C;
+--color: #1259c3;
+--color: #666;
+--color: #ebebeb;
+--color: #39b54a;
+--base-font-family: 'Roboto',sans-serif
+
+}
+
+header {
+background-color: #EAC926;
+margin: 0%;
+padding: 12px;
+text-align: center;
+box-sizing: border-box;
+}
+
+.container__main {
+width: 90%;
+margin: 0 auto;
+padding: 0;
+text-align: center;
+display: flex;
+flex-wrap: wrap;
+}
+
+footer {
+text-align: center;
+background-color: white;
+}
+
+.logo {
+    max-width: 250px;
+    display: inline-flex;
+}
+
+.search {
+    margin-bottom: 2px;
+    padding: 6px 1px 7px;
+    display: inline-block;
+    font-size: 10px;
+    border: solid white;
+    width: 50%;
+}
+
+.lupa__ {
+    color: #03264C;
+    background-color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    border: solid white 2.5px;
+    padding: 4px 1px 7px;
+    vertical-align: baseline;
+    margin-left: -4px;
+}
+
+.logo__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.fa-solid fa-hand-holding-dollar {
+    display: inline;
+    font-size: 2px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.manodolar {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: right;
+    max-width: 350px;
+    color: rgba(51, 51, 51, .9);
+}
+
+
+.barra__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 0 15px;
+    color: rgba(51, 51, 51, .6);
+}
+
+.barra__main ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.barra__main li {
+display: flex;
+justify-content: space-between;
+margin: 0 8px;
+align-items: center;
+white-space: nowrap;
+}
+
+.barra__main a{
+    text-decoration: none;
+    color: rgba(51, 51, 51, .6);
+    display: inline-block;
+    font-size: 14px;
+    align-items: baseline;
+    margin: 0 4px;
+    font-weight: 300;
+}
+
+.barra__main a:hover {
+    color: rgba(51, 51, 51, .8);
+}
+
+.burguer-menu {
+    background-color: #1259c3;
+    color: white;
+    width: 0 auto;
+    padding: 6px 8px;
+    display: none;
+    margin: 15px;
+    border-radius: 8px;
+    border: solid #1259c3 1px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 0;
+    display: block;
+    position: relative;
+}
+
+p {
+    font-size: 12px;
+}
+
+section {
+    margin: 0 auto;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+article {
+    margin: 10px 5px;
+    display: inline-block;
+    position: relative;
+}
+
+.card {
+    background-color: white;
+    display: inline-block;
+    max-width: 290px;
+}
+
+.article-main {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    background-color: white;
+    display: inline-block;
+}
+
+.titles {
+    font-size: 24px;
+}
+
+.fa-truck {
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    background-color: #FFF;
+    position: absolute;
+    right: 20px;
+    bottom: 53px;
+    display: inline-block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.precio {
+    font-size: 18px;
+    font-weight: bold;
+    display: inline;
+    margin-left: -20px;
+    width: 22%;
+}
+
+.descuento {
+    font-size: 16px;
+    color: #39b54a;
+    display: inline;
+    width: 64%;
+}
+
+.descripcion {
+    font-size: 16px;
+    color: #666;
+    display: none;
+}
+
+
+.footer__text {
+    color: grey;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__text {
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer-icon {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.Copyright {
+    padding: 3px;
+    margin-bottom: 10px;
+    background-color: white;
+    text-align: left;
+    width: 100%;
+    padding-left: 5px;
+}
+
+/* version mobile */
+
+@media (max-width: 426px) {
+    .main-header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .main-navbar {
+        display: none;
+    }
+
+    .burguer-menu {
+        display: inline-block;
+    }
+
+    .descripcion {
+        display: none;
+    }
+    
+}
+
+/* version tablet */
+
+@media (min-width: 769px) {
+    .top__header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .barra__main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .search {
+        width: 330px;
+        margin-left: 15px;
+        padding: 6px 10px 7px;
+        font-size: 13px;
+    }
+
+    .lupa__ {
+        border: solid white 1px;
+        padding: 7px 1px 8px;
+        vertical-align: baseline;
+        margin-left: -4px;
+    }
+
+    .burguer-menu {
+        display: none;
+    }
+
+    .card:hover .descripcion {
+        display: block;
+        box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
+    }
+}
+
+/* version desktop */
+
+
+@media (min-width: 1024px) {
+    .top__header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .barra__main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+    .logo {
+        max-width: 600px;
+    }
+
+    .burguer-menu {
+        display: none;
+    }
+
+    .search {
+        width: 405px;
+        margin-left: 55px;
+        padding: 6px 10px 7px;
+        font-size: 13px;
+    }
+
+    .lupa__ {
+        border: solid white 1px;
+        padding: 7px 1px 8px;
+        vertical-align: baseline;
+        margin-left: -4px;
+    }
+
+    .card:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transition: 0.5s;
+    }
+
+    .card:hover .descripcion {
+        display: block
+    }
+
+    .fa-truck:hover {
+        transition: 0.5s;
+        transform: rotate(270deg);
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 12px;
+        max-width: 100%;
+    }
+
+   
+
+    .footer-icon:hover {
+        color: #0022AA;
+    }
+}
+
